@@ -14,10 +14,12 @@
     <!-- google icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!-- SWIPER -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>首頁</title>
     <style>
       body {
@@ -36,11 +38,12 @@
         background-position: center;
         background-size: contain;
       }
+      .bg-half{
+        background: linear-gradient(to top, #f0f3f5 25%, transparent 25%);
+        background-color: #fcfcfd;
+      }
       .fs-20{
         font-size: 20px;
-      }
-      .b-r-16{
-        border-radius: 16px;
       }
       .mb-32 {
   margin-bottom: 32px;
@@ -123,19 +126,19 @@
   border-color: transparent transparent #ffffff;
 }
 
-.letter{
+  .letter{
     background-color: #141a1f80;
     opacity: 0;
     transition: opacity .5s ease;
-}
-.letter:hover{
+   }
+  .letter:hover{
     opacity: 1;
- }
- .line{
+  }
+  .line{
     width: 70%;
     background: #d1d9e1;
     height: 1px;
- }
+  }
     </style>
   </head>
   <body>
@@ -278,9 +281,10 @@
       </div>
     </div>
     <!-- sect2 -->
-     <div class="container mt-3">
+     <div class="bg-half">
+     <div class="container mt-3 ">
   <div class="row">
-    <div class="col-md-4 d-flex flex-column justify-content-center align-items-start">
+    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-start">
       <img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/logo.png?raw=true" class="mb-4" alt="logo">
       <h2 class="fs-1 fw-bold lh-sm mb-4">
         他們已經踏上職旅<br>
@@ -288,10 +292,10 @@
       </h2>
       <p>每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
     </div>
-    <div class="col-md-8 ">
-      <div class="swiper mySwiper mb-3 ">
-        <div class="swiper-wrapper " style="z-index: 10;">
-          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 col-6">
+    <div class="col-lg-8">
+      <div class="swiper mySwiper mb-3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 position-relative bg-white " role="group" aria-label="1 / 5" style="width: 400px;" >
             <div class="horn"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/img.png?raw=true" class="mb-3" alt="圖片1"></div>
             <div class="p-3">
               <h3 class="fs-4 fw-900 mb-3">轉型成功的設計師</h3>
@@ -301,8 +305,10 @@
                 <p class="border-start ps-2">郭敏迪 (34y)</p>
               </div>
             </div>
+            <span class="position-absolute bg-primary text-white top-0 start-0 m-2 px-3 py-2 fw-medium"  style="border-radius: 16px;">數位遊牧 2 年</span>
           </div>
-          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 col-6"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/image.png?raw=true" class="mb-3" alt="圖片1">
+          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 position-relative bg-white" role="group" aria-label="2 / 5" style="width: 400px;" >
+            <div class="horn"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/image.png?raw=true" class="mb-3" alt="圖片1"></div>
             <div class="p-3">
               <h3 class="fs-4 fw-900 mb-3">數位遊牧生活實踐者</h3>
               <p class="mb-3">兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多 20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。</p>
@@ -311,8 +317,10 @@
                 <p class="border-start ps-2">林雨潔 (29y)</p>
               </div>
             </div>
+            <span class="position-absolute bg-primary text-white top-0 start-0 m-2 px-3 py-2 fw-medium"  style="border-radius: 16px;">數位遊牧 2 年</span>
           </div>
-          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 col-6"><img src="https://raw.githubusercontent.com/0404kai/2025-layout-img/3ef810b0ed1306314aacd57e24d7706746c45988/week6/image-1.png" class="mb-3" alt="圖片1">
+          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 position-relative bg-white" role="group" aria-label="3 / 5" style="width: 400px;" >
+            <div class="horn"><img src="https://raw.githubusercontent.com/0404kai/2025-layout-img/3ef810b0ed1306314aacd57e24d7706746c45988/week6/image-1.png" class="mb-3" alt="圖片1"></div>
             <div class="p-3">
               <h3 class="fs-4 fw-900 mb-3">中年轉型的工程師</h3>
               <p class="mb-3">59 歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。</p>
@@ -321,8 +329,10 @@
                 <p class="border-start ps-2">張世明 (62y)</p>
               </div>
             </div>
+            <span class="position-absolute bg-primary text-white top-0 start-0 m-2 px-3 py-2 fw-medium"  style="border-radius: 16px;">數位遊牧 2 年</span>
           </div>
-          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 col-6"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/img.png?raw=true" class="mb-3" alt="圖片1">
+          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 position-relative bg-white" role="group" aria-label="4 / 5" style="width: 400px;" >
+            <div class="horn"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/img.png?raw=true" class="mb-3" alt="圖片1"></div>
             <div class="p-3">
               <h3 class="fs-4 fw-900 mb-3">轉型成功的設計師</h3>
               <p class="mb-3">從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
@@ -331,8 +341,10 @@
                 <p class="border-start ps-2">郭敏迪 (34y)</p>
               </div>
             </div>
+            <span class="position-absolute bg-primary text-white top-0 start-0 m-2 px-3 py-2 fw-medium"  style="border-radius: 16px;">數位遊牧 2 年</span>
           </div>
-          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 col-6"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/image.png?raw=true" class="mb-3" alt="圖片1">
+          <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4 position-relative bg-white" role="group" aria-label="5 / 5" style="width: 400px;" >
+            <div class="horn"><img src="https://github.com/0404kai/2025-layout-img/blob/main/week6/image.png?raw=true" class="mb-3" alt="圖片1"></div>
             <div class="p-3">
               <h3 class="fs-4 fw-900 mb-3">數位遊牧生活實踐者</h3>
               <p class="mb-3">兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多 20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。</p>
@@ -341,13 +353,14 @@
                 <p class="border-start ps-2">林雨潔 (29y)</p>
               </div>
             </div>
+            <span class="position-absolute bg-primary text-white top-0 start-0 m-2 px-3 py-2 fw-medium"  style="border-radius: 16px;">數位遊牧 2 年</span>
           </div>
         </div>
       </div>
     </div>
   </div>
      </div>
-     <div class="bg-grey position-relative" style="height: 200px;"></div>
+     </div>
     <!-- sect3 -->
     <div class="bg-grey py-7">
      <div class="container">
@@ -437,7 +450,7 @@
         <p class=" text-white lh mb-md-5 text-center" style="font-size: 18px;">簡單四步，踏上你的職旅</p>
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <div class="card  pt-6 pb-4 shadow  position-relative d-flex flex-column justify-content-center align-items-center" style="border-radius: 16px;">
               <img src="/assets/images/2025-week6/index/serve-1.svg" alt="serve-1" class="img-fluid object-fit-cover mb-md-5" >
               <div class="position-absolute bg-grey text-primary top-0 start-0 py-3 px-4 fw-bold" style=" left: 0; width: fit-content; border-bottom-right-radius: 16px; border-top-left-radius: 16px;">
@@ -451,7 +464,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="col-lg-3 d-none d-md-block">
             <div class="card  pt-6 pb-4 shadow  position-relative d-flex flex-column justify-content-center align-items-center" style="border-radius: 16px;">
               <img src="/assets/images/2025-week6/index/serve-2.svg" alt="serve-1" class="img-fluid object-fit-cover mb-md-5" >
               <div class="position-absolute bg-grey text-primary top-0 start-0 py-3 px-4 fw-bold" style=" left: 0; width: fit-content; border-bottom-right-radius: 16px; border-top-left-radius: 16px;">
@@ -465,7 +478,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="col-lg-3 d-none d-md-block">
             <div class="card  pt-6 pb-4 shadow  position-relative d-flex flex-column justify-content-center align-items-center" style="border-radius: 16px;">
               <img src="/assets/images/2025-week6/index/serve-3.svg" alt="serve-1" class="img-fluid object-fit-cover mb-md-5" >
               <div class="position-absolute bg-grey text-primary top-0 start-0 py-3 px-4 fw-bold" style=" left: 0; width: fit-content; border-bottom-right-radius: 16px; border-top-left-radius: 16px;">
@@ -479,7 +492,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-none d-md-block">
+          <div class="col-lg-3 d-none d-md-block">
             <div class="card  pt-6 pb-4 shadow  position-relative d-flex flex-column justify-content-center align-items-center" style="border-radius: 16px;">
               <img src="/assets/images/2025-week6/index/serve-4.svg" alt="serve-1" class="img-fluid object-fit-cover mb-md-5" >
               <div class="position-absolute bg-grey text-primary top-0 start-0 py-3 px-4 fw-bold" style=" left: 0; width: fit-content; border-bottom-right-radius: 16px; border-top-left-radius: 16px;">
@@ -614,7 +627,8 @@
     Copyright © 2025 職旅 workway. All rights reserved.
   </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
