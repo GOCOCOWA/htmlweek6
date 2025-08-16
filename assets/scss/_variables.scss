@@ -308,6 +308,7 @@ $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $grey:          #F0F3F5 !default;
 $green:         #36C99F !default;
+$gf:            #667F99 !default;
 
 // scss-docs-end theme-color-variables
 
@@ -321,6 +322,7 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
+  "gf":         #667F99,
   "green":      #36C99F,
   "grey":       #F0F3F5
 ) !default;
