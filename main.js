@@ -6,7 +6,7 @@ const swiper = new Swiper(".mySwiper", {
   breakpoints: {
     // 手機 (0px 以上)
     0: {
-      slidesPerView: 1, // 一次只顯示 1 張
+      slidesPerView: 1.1, // 一次只顯示 1 張
     },
     // 平板 (768px 以上)
     768: {
